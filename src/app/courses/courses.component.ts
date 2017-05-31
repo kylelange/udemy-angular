@@ -8,7 +8,7 @@ import { CourseService } from './course.service';
   providers: [CourseService]
 })
 export class CoursesComponent implements OnInit {
-  title = "The Title of the courses page..."
+  title = "Courses Section"
   courses;
 
   constructor(courseService: CourseService) {
