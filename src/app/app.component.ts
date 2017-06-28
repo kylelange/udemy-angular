@@ -3,6 +3,7 @@ import { CoursesComponent } from './courses/courses.component';
 import { AuthorsComponent } from './authors/authors.component';
 import { StarComponent } from './star/star.component';
 import { HeartComponent } from './heart/heart.component';
+import { VoteComponent } from './vote/vote.component';
 
 
 @Component({
