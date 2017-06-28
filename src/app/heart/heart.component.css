@@ -1,0 +1,14 @@
+span {
+  margin-left: 10px;
+}
+
+.glyphicon-heart {
+  color: #ccc;
+  cursor: pointer;
+  transform: scale(2);
+  margin-left: 50px;
+}
+
+.highlighted {
+  color: deeppink;
+}

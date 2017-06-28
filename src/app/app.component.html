@@ -13,3 +13,6 @@ Preview: {{title}}
 <courses></courses>
 <authors></authors>
 <star [isStar]="post.isStar" (change)="onStarChange($event)"></star>
+<heart
+  [isLiked]="tweet.isLiked" [totalLikes]="tweet.totalLikes"
+></heart>

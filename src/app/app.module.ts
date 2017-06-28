@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses/courses.component';
 import { AuthorsComponent } from './authors/authors.component';
 import { StarComponent } from './star/star.component';
+import { HeartComponent } from './heart/heart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CoursesComponent,
     AuthorsComponent,
-    StarComponent
+    StarComponent,
+    HeartComponent
   ],
   imports: [
     BrowserModule,

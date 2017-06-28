@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { CoursesComponent } from './courses/courses.component';
 import { AuthorsComponent } from './authors/authors.component';
 import { StarComponent } from './star/star.component';
+import { HeartComponent } from './heart/heart.component';
+
 
 @Component({
   selector: 'app-root',
@@ -14,6 +16,10 @@ export class AppComponent {
   post = {
     title: "Title",
     isStar: true
+  };
+  tweet = {
+    totalLikes: 10,
+    isLiked: false
   }
 
   onStarChange($event){
