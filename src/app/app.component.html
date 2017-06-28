@@ -1,5 +1,15 @@
 <h1>
   {{title}}
 </h1>
+<!-- Two-way binding: the old way
+<input type="text" [value]="title" (input)="title=$event.target.value" /> -->
+
+<!-- This new two-way binding combines prop binding AND event binding symbols  -->
+<input type="text" [(ngModel)]="title" />
+
+<input type="button" (click)="title=''" value="clear"/>
+<button (click)="title=''">CLEAR</button>
+Preview: {{title}}
 <courses></courses>
 <authors></authors>
+<star [isStar]="post.isStar" (change)="onStarChange($event)"></star>
