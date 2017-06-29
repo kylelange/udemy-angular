@@ -16,4 +16,8 @@ Preview: {{title}}
 <heart
   [isLiked]="tweet.isLiked" [totalLikes]="tweet.totalLikes"
 ></heart>
-<vote></vote>
+<vote
+  [voteCount]="vote.voteCount"
+  [myVote]="vote.myVote"
+  (change)="onVoteChange($event)"
+></vote>

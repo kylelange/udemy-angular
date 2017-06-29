@@ -9,5 +9,17 @@ span {
 
 .glyphicon {
   margin-left: 20px;
+  cursor: pointer;
+}
 
+.highlightedUp {
+  color: lawngreen;
+}
+
+.highlightedDown {
+  color: firebrick;
+}
+
+.numberDisplay {
+  font-size: 16px;
 }

@@ -21,6 +21,14 @@ export class AppComponent {
   tweet = {
     totalLikes: 10,
     isLiked: false
+  };
+  vote = {
+    voteCount: 10,
+    myVote: 0
+  }
+
+  onVoteChange($event){
+    console.log($event);
   }
 
   onStarChange($event){

@@ -2,13 +2,13 @@
 <div>
   <i
     class="glyphicon glyphicon-menu-up"
-
-    (click)="onClick()">
+    [class.highlightedUp]="myVote == 1"
+    (click)="onClickUp()">
   </i>
-  <span>{{ voteCount }}</span>
+  <span class="numberDisplay">{{ voteCount + myVote }}</span>
   <i
     class="glyphicon glyphicon-menu-down"
-
-    (click)="onClick()">
+    [class.highlightedDown]="myVote == -1"
+    (click)="onClickDown()">
   </i>
 </div>
