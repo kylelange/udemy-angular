@@ -16,7 +16,7 @@ import { VoteComponent } from './vote/vote.component';
     AuthorsComponent,
     StarComponent,
     HeartComponent,
-    VoteComponent
+    VoteComponent,
   ],
   imports: [
     BrowserModule,
