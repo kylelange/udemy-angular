@@ -4,6 +4,7 @@ import { AuthorsComponent } from './authors/authors.component';
 import { StarComponent } from './star/star.component';
 import { HeartComponent } from './heart/heart.component';
 import { VoteComponent } from './vote/vote.component';
+import { SwitchComponent } from './switch/switch.component';
 
 
 @Component({
@@ -13,6 +14,7 @@ import { VoteComponent } from './vote/vote.component';
 })
 
 export class AppComponent {
+  viewMode = 'map';
   title = 'Udemy Angular App!';
   post = {
     title: "Title",

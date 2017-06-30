@@ -11,7 +11,7 @@ import { CourseService } from './course.service';
 
 export class CoursesComponent implements OnInit {
   title = "Courses Section"
-  courses;
+  courses = [];
 
   constructor(courseService: CourseService) {
     this.courses = courseService.getCourses();

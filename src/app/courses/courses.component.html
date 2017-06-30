@@ -1,9 +1,14 @@
-<h3>
-  {{ title }}
-</h3>
-<input type="text" autoGrow />
-<ul>
-  <li *ngFor="let course of courses">
-    {{ course }}
-  </li>
-</ul>
+<div *ngIf="courses.length > 0">
+  <h3>
+    {{ title }}
+  </h3>
+  <input type="text" autoGrow />
+  <ul>
+    <li *ngFor="let course of courses">
+      {{ course }}
+    </li>
+  </ul>
+</div>
+<div *ngIf="courses.length == 0">
+  <h6>(You don't have any courses, yet ...)</h6>
+</div>
