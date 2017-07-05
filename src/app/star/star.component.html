@@ -1,7 +1,10 @@
 <h3>Click the star...</h3>
 <i
   class="glyphicon"
-  [class.glyphicon-star-empty]="!isStar"
-  [class.glyphicon-star]="isStar"
+
+  [ngClass]="{
+    'glyphicon-star-empty':!isStar,
+    'glyphicon-star':isStar
+  }"
   (click)="onClick()">
 </i>

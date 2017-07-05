@@ -1,3 +1,5 @@
+<contact-form></contact-form>
+<br>
 <h1>
   {{title}}
 </h1>
@@ -10,6 +12,12 @@
 <input type="button" (click)="title=''" value="clear"/>
 <button (click)="title=''">CLEAR</button>
 Preview: {{title}}
+<zippy title="Who can see my stuff?">
+  Content of who can see my stuff
+</zippy>
+<zippy title="Who can contact me?">
+  Content of who can see my stuff
+</zippy>
 <courses></courses>
 <authors></authors>
 <star [isStar]="post.isStar" (change)="onStarChange($event)"></star>
@@ -22,3 +30,4 @@ Preview: {{title}}
   (change)="onVoteChange($event)"
 ></vote>
 <switch></switch>
+<pipe></pipe>

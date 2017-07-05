@@ -9,6 +9,10 @@ import { StarComponent } from './star/star.component';
 import { HeartComponent } from './heart/heart.component';
 import { VoteComponent } from './vote/vote.component';
 import { SwitchComponent } from './switch/switch.component';
+import { PipeComponent } from './pipe/pipe.component';
+import {SummaryPipe} from './pipe/summary.pipe';
+import { ZippyComponent } from './zippy/zippy.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +23,10 @@ import { SwitchComponent } from './switch/switch.component';
     HeartComponent,
     VoteComponent,
     SwitchComponent,
+    PipeComponent,
+    SummaryPipe,
+    ZippyComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,

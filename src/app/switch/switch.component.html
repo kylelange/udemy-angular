@@ -2,7 +2,14 @@
   <li [class.active]="viewMode == 'map'" ><a (click)="viewMode = 'map'">Map View</a></li>
   <li [class.active]="viewMode == 'list'"><a (click)="viewMode = 'list'">List View</a></li>
 </ul>
-<div [ngSwitch]="viewMode">
-  <ng-template *ngSwitchCase="'map'" ngSwitchDefault>Map View Content</ng-template>
-  <ng-template *ngSwitchCase="'list'">List View Content</ng-template>
+<h2>View Mode: {{ viewMode }}</h2>
+<div [ngSwitch]="viewMode" class="div-switch">
+  <!-- <ng-template class="switch-text" *ngSwitchCase="'map'">Map View Content</ng-template>
+  <ng-template class="switch-text" *ngSwitchCase="'list'">List View Content</ng-template> -->
+  <div *ngSwitchCase="'map'">
+    MAP
+  </div>
+  <div *ngSwitchCase="'list'">
+    LIST
+  </div>
 </div>
