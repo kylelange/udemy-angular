@@ -5,6 +5,14 @@ type="text" class="form-control">
 <div class="json">
   <h1>Fake posts!</h1>
   <ul>
-    <li *ngFor="let post of posts">{{post.title}}</li>
+    <li *ngFor="let post of posts">
+      <button
+      (click)="updatePost(post)"
+      class="btn btn-default btn-small">Update</button>
+      <button
+      (click)="deletePost(post)"
+      class="btn btn-default btn-small">Delete</button>
+      {{post.title}}
+    </li>
   </ul>
 </div>
