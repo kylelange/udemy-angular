@@ -14,6 +14,7 @@ import {SummaryPipe} from './pipe/summary.pipe';
 import { ZippyComponent } from './zippy/zippy.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { PostsComponent } from './posts/posts.component';
+import { PostService } from './services/post.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,9 @@ import { PostsComponent } from './posts/posts.component';
     FormsModule,
     HttpModule
   ],
-  providers: [],
+  providers: [
+    PostService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
