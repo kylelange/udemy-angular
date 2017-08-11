@@ -1,15 +1,15 @@
-<contact-form></contact-form>
-<br>
 <h1>
   {{title}}
 </h1>
+<contact-form></contact-form>
+<br>
 <!-- Two-way binding: the old way
 <input type="text" [value]="title" (input)="title=$event.target.value" /> -->
 
 <!-- This new two-way binding combines prop binding AND event binding symbols  -->
 <input type="text" [(ngModel)]="title" />
-
-<input type="button" (click)="title=''" value="clear"/>
+<posts></posts>
+<!-- <input type="button" (click)="title=''" value="clear"/>
 <button (click)="title=''">CLEAR</button>
 Preview: {{title}}
 <zippy title="Who can see my stuff?">
@@ -30,4 +30,4 @@ Preview: {{title}}
   (change)="onVoteChange($event)"
 ></vote>
 <switch></switch>
-<pipe></pipe>
+<pipe></pipe> -->

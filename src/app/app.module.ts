@@ -13,6 +13,7 @@ import { PipeComponent } from './pipe/pipe.component';
 import {SummaryPipe} from './pipe/summary.pipe';
 import { ZippyComponent } from './zippy/zippy.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
+import { PostsComponent } from './posts/posts.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     PipeComponent,
     SummaryPipe,
     ZippyComponent,
-    ContactFormComponent
+    ContactFormComponent,
+    PostsComponent
   ],
   imports: [
     BrowserModule,
